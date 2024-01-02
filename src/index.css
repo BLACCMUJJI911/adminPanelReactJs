@@ -4,10 +4,178 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color: blue;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.mainContainer {
+
+  height: 95vh;
+  width: 70vw;
+  margin: auto;
+  background-color: rgba(30, 4, 54, 0.292);
+  backdrop-filter: blur(100px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.505);
+  border: none;
+
+}
+
+.line {
+
+  width: 80%;
+
+
+}
+
+.line2 {
+
+  width: 80%;
+
+
+}
+
+.form {
+
+  height: 60vh;
+  width: 50vw;
+
+
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+  }
+
+  #sidebar {
+    background-color: gray;
+    position: fixed;
+    /* top: 1px;
+    bottom: 0; */
+    height: 100vh;
+    width: 16vw;
+    left: 0;
+    z-index: 1000;
+    /* padding: 20px; */
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* box-shadow: 0 1px 0 12px black; */
+    /* Scrollable contents if viewport is shorter than content. */
+
+  }
+}
+
+::-webkit-scrollbar {
+
+  background-color: lightgrey;
+  width: .7rem;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+  background-color: gray;
+  border-radius: .3rem;
+
+}
+
+.post {
+
+  height: 70vh;
+
+}
+
+.posttxt {
+  height: 20vh;
+}
+
+.userPosts {
+
+  overflow-y: auto;
+  height: 30rem;
+
+}
+
+.cardd {
+  height: 40vh;
+  width: 20vw;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.326);
+  border-radius: .2rem;
+}
+
+li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.317);
+  cursor: pointer;
+}
+
+.liprof {
+
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.lastChildLi {
+  margin-top: auto !important;
+}
+
+li:hover {
+
+  transition: ease .2s;
+  color: white;
+
+}
+
+.img {
+
+  height: 20vh;
+  width: 22vw;
+  object-fit: contain;
+
+}
+
+.admin {
+
+  position: fixed;
+  z-index: 100;
+  bottom: 30rem;
+  left: 12.5rem;
+  width: 83.8%;
+  background-color: #bea925;
+  padding: .8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+
+
+}
+
+.lineAdmin {
+
+  margin-top: 5rem;
+
+}
+
+.notFound {
+
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.nf {
+  width: 60%;
+  height: 1px;
+  background-color: black;
 }
